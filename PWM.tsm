@@ -1,0 +1,6 @@
+state state0:
+	if((pwm_inp == 4'ha) && (cnt_reg == 5'h15)) then
+		trigger;
+	else
+		goto state0;
+	endif
